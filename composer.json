@@ -1,0 +1,42 @@
+{
+    "name": "lloricode/spatie-laravel-permission-extended",
+    "description": "Extending spatie's laravel-permission Functions.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lloric Mayuga Garcia",
+            "email": "lloricode@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "spatie/laravel-permission": "^2.9"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lloricode\\SpatieLaravelPermissionExtended\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lloricode\\SpatieLaravelPermissionExtended\\Providers\\SpatieLaravelPermissionExtendedProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
