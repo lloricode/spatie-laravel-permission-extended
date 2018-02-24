@@ -7,5 +7,4 @@ php:
 
 before_script: 
  - composer install
- - php artisan --version
 script: vendor/bin/phpunit
